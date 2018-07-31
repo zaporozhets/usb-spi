@@ -1,0 +1,4 @@
+# type this at the command prompt: sudo cp 99-usb-spi.rules /etc/udev/rules.d/
+
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="0483", ATTR{idProduct}=="5740", MODE="0666"
+
